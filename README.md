@@ -1,4 +1,4 @@
-# Taskly — Kanban Task Board
+# Taskly - Kanban Task Board
 
 A three-column - To Do / In Progress / Done kanban dashboard with drag-and-drop,
 built with React + TypeScript, Zustand, Tailwind CSS v4
