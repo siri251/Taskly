@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-ink: #ecedf1;
+  --color-ink-dim: #8a93a3;
+  --color-ink-faint: #565f6e;
+
+  --color-surface-0: #0f1216;
+  --color-surface-1: #171b21;
+  --color-surface-2: #1e232b;
+  --color-surface-3: #262c35;
+
+  --color-line: #2a303a;
+  --color-line-strong: #3a4250;
+
+  --color-todo: #e8a93d;
+  --color-todo-dim: #4a3a1f;
+  --color-progress: #4c8dff;
+  --color-progress-dim: #1f2d4a;
+  --color-done: #3ecf8e;
+  --color-done-dim: #1a3a2c;
+  --color-danger: #e8604c;
+}
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+  }
+  body {
+    background-color: var(--color-surface-0);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(255,255,255,0.035) 1px, transparent 0);
+    background-size: 28px 28px;
+  }
+}
+
+@layer utilities {
+  .perforation {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      var(--color-line-strong) 0,
+      var(--color-line-strong) 4px,
+      transparent 4px,
+      transparent 10px
+    );
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: var(--color-line-strong);
+    border-radius: 999px;
+  }
+}
