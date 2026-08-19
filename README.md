@@ -1,3 +1,5 @@
+![Tests](https://github.com/siri251/Taskly/actions/workflows/test.yml/badge.svg)
+
 # Taskly - Kanban Task Board
 
 A three-column - To Do / In Progress / Done kanban dashboard with drag-and-drop,
