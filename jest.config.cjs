@@ -1,1 +1,1 @@
-module.exports = { preset: 'ts-jest', testEnvironment: 'jest-environment-jsdom', setupFilesAfterEnv: ['<rootDir>/src/test/setup.ts'], transform: { '^.+\\.tsx?$': ['ts-jest', { tsconfig: 'tsconfig.jest.json' }], }, };
+module.exports = { preset: 'ts-jest', testEnvironment: 'jest-environment-jsdom', setupFilesAfterEnv: ['<rootDir>/src/test/setup.ts'], testPathIgnorePatterns: ['/node_modules/', '/e2e/'] ,transform: { '^.+\\.tsx?$': ['ts-jest', { tsconfig: 'tsconfig.jest.json' }], }, };
